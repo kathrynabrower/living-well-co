@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Well Co. - Admin Panel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fdfbf7; padding: 2rem; }
+
+    .container { max-width: 900px; margin: 0 auto; }
+
+    h1 { font-size: 32px; margin-bottom: 0.5rem; color: #2c2c2a; }
+    .subtitle { color: #888780; margin-bottom: 2rem; }
+
+    .form-section {
+      background: white;
+      border: 1px solid #e5dccf;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #2c2c2a;
+      margin-bottom: 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5dccf;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    textarea { min-height: 80px; resize: vertical; }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #1d9e75;
+      box-shadow: 0 0 0 2px rgba(29, 158, 117, 0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: #1d9e75;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0f6e56;
+    }
+
+    .btn-secondary {
+      background: #f5f0e8;
+      color: #2c2c2a;
+    }
+
+    .btn-secondary:hover {
+      background: #e5dccf;
+    }
+
+    .btn-danger {
+      background: #d85a30;
+      color: white;
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .btn-danger:hover {
+      background: #c04820;
+    }
+
+    .products-list {
+      background: white;
+      border: 1px solid #e5dccf;
+      border-radius: 8px;
+      padding: 2rem;
+    }
+
+    .products-list h2 {
+      margin-bottom: 1.5rem;
+      color: #2c2c2a;
+    }
+
+    .product-item {
+      background: #f5f0e8;
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    .product-info h3 {
+      color: #2c2c2a;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-info p {
+      font-size: 13px;
+      color: #888780;
+      margin-bottom: 4px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-edit, .btn-copy {
+      padding: 8px 12px;
+      font-size: 13px;
+      background: #1d9e75;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-edit:hover, .btn-copy:hover {
+      background: #0f6e56;
+    }
+
+    .message {
+      padding: 12px;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+
+    .message.success {
+      background: #e6f7f0;
+      color: #0f6e56;
+    }
+
+    .message.error {
+      background: #ffe6e0;
+      color: #c04820;
+    }
+
+    .export-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5dccf;
+    }
+
+    .export-section h3 {
+      margin-bottom: 1rem;
+      color: #2c2c2a;
+    }
+
+    .instructions {
+      background: #e6f7f0;
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #0f6e56;
+    }
+
+    .instructions ol {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .instructions li {
+      margin-bottom: 0.5rem;
+    }
+
+    .no-products {
+      text-align: center;
+      color: #888780;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Living Well Co. Admin</h1>
+  <p class="subtitle">Add, edit, and manage your curated products</p>
+
+  <div id="message"></div>
+
+  <div class="form-section">
+    <h2>Add New Product</h2>
+    <form id="productForm">
+      <div class="form-group">
+        <label>Product Name *</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Category *</label>
+        <select id="category" required>
+          <option value="">Select category...</option>
+          <option value="fitness">Fitness</option>
+          <option value="health">Health & Wellness</option>
+          <option value="home">Home & Living</option>
+          <option value="pet">Pet Favorites</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Image URL (Canva link or placeholder)</label>
+        <input type="url" id="image" placeholder="https://...">
+      </div>
+
+      <div class="form-group">
+        <label>Description *</label>
+        <textarea id="desc" required></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Original Price $*</label>
+          <input type="number" id="orig" required step="0.01" min="0">
+        </div>
+        <div class="form-group">
+          <label>Current Price $ *</label>
+          <input type="number" id="curr" required step="0.01" min="0">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Amazon Affiliate Link</label>
+        <input type="url" id="link" placeholder="https://amazon.com/dp/ASIN?tag=YOUR-TAG">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+
+  <div class="products-list">
+    <h2>Current Products (<span id="count">0</span>)</h2>
+    <div id="productsList"></div>
+
+    <div class="export-section">
+      <h3>Export for GitHub</h3>
+      <div class="instructions">
+        <strong>How to update the live site:</strong>
+        <ol>
+          <li>Click "Copy JSON" below</li>
+          <li>Go to <strong>GitHub.com</strong> → Kat's repo → <strong>products.json</strong></li>
+          <li>Click the <strong>pencil icon</strong> (Edit file)</li>
+          <li><strong>Delete all old code</strong> → paste the new JSON</li>
+          <li>Click <strong>"Commit changes"</strong></li>
+          <li>Wait 30 seconds → your site updates automatically!</li>
+        </ol>
+      </div>
+      <button class="btn btn-primary" onclick="copyJsonToClipboard()">Copy JSON to Clipboard</button>
+      <button class="btn btn-secondary" onclick="downloadJson()">Download JSON File</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const STORAGE_KEY = 'livingWellProducts';
+let products = [];
+let nextId = 1;
+
+function loadProducts() {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    products = JSON.parse(stored);
+    nextId = Math.max(...products.map(p => p.id || 0)) + 1;
+  } else {
+    loadDefaultProducts();
+  }
+  renderProducts();
+}
+
+function loadDefaultProducts() {
+  products = [
+    { id: 1, name: "NordicTrack iFIT Treadmill", category: "fitness", image: "https://via.placeholder.com/300x240?text=NordicTrack", desc: "Interactive training that adapts to your goals.", orig: 1499, curr: 999, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 2, name: "Resistance Bands Set", category: "fitness", image: "https://via.placeholder.com/300x240?text=Resistance+Bands", desc: "Five levels with carry bag. Best home upgrade.", orig: 29, curr: 19, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 3, name: "Owala Water Bottle", category: "fitness", image: "https://via.placeholder.com/300x240?text=Owala", desc: "Keeps drinks cold 24 hours. Dual-function lid.", orig: 36, curr: 26, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 4, name: "Liquid I.V. Variety Pack", category: "fitness", image: "https://via.placeholder.com/300x240?text=Liquid+IV", desc: "Cellular hydration without sugar. 30K monthly.", orig: 45, curr: 35, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 5, name: "Yoga Mat Premium", category: "fitness", image: "https://via.placeholder.com/300x240?text=Yoga+Mat", desc: "Natural rubber, alignment guides, 5mm cushioning.", orig: 120, curr: 90, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 6, name: "Massage Gun Pro", category: "fitness", image: "https://via.placeholder.com/300x240?text=Massage+Gun", desc: "Deep muscle relief, 3 speeds, app-guided routines.", orig: 299, curr: 209, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 7, name: "Vitamin C Serum", category: "health", image: "https://via.placeholder.com/300x240?text=Vitamin+C", desc: "Visible results in 30 days. Stable formula.", orig: 58, curr: 42, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 8, name: "Mighty Patch Acne Patches", category: "health", image: "https://via.placeholder.com/300x240?text=Mighty+Patch", desc: "#1 seller. Flattens blemishes overnight.", orig: 16, curr: 11, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 9, name: "Magnesium Glycinate", category: "health", image: "https://via.placeholder.com/300x240?text=Magnesium", desc: "Better sleep within a week. No jitters.", orig: 25, curr: 18, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 10, name: "Athletic Greens AG1", category: "health", image: "https://via.placeholder.com/300x240?text=Athletic+Greens", desc: "75+ micronutrients. Energy, recovery, immunity.", orig: 99, curr: 79, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 11, name: "Sleep Support Stack", category: "health", image: "https://via.placeholder.com/300x240?text=Sleep+Support", desc: "Magnesium + Melatonin. Night time formula.", orig: 32, curr: 24, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 12, name: "Face Moisturizer Premium", category: "health", image: "https://via.placeholder.com/300x240?text=Moisturizer", desc: "Lightweight, fast absorb. Glowing skin in 5 days.", orig: 68, curr: 53, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 13, name: "TERRO Ant Bait", category: "home", image: "https://via.placeholder.com/300x240?text=TERRO", desc: "Eliminates entire colony. Household staple.", orig: 12, curr: 8, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 14, name: "Mosquito Dunks", category: "home", image: "https://via.placeholder.com/300x240?text=Mosquito+Dunks", desc: "Safe for pets & wildlife. Seasonal essential.", orig: 20, curr: 14, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 15, name: "Zevo Insect Trap", category: "home", image: "https://via.placeholder.com/300x240?text=Zevo", desc: "No sprays, smell, or mess. Set and forget.", orig: 35, curr: 26, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 16, name: "Air Purifier Pro", category: "home", image: "https://via.placeholder.com/300x240?text=Air+Purifier", desc: "True HEPA. Covers 400 sq ft. Ultra-quiet.", orig: 549, curr: 449, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 17, name: "Litter-Robot 4", category: "pet", image: "https://via.placeholder.com/300x240?text=Litter-Robot", desc: "Self-cleans. Gold standard for multi-cat homes.", orig: 499, curr: 399, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 18, name: "Furbo Dog Camera", category: "pet", image: "https://via.placeholder.com/300x240?text=Furbo", desc: "360° view, two-way audio, treat tossing.", orig: 199, curr: 149, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 19, name: "Farmer's Dog Meals", category: "pet", image: "https://via.placeholder.com/300x240?text=Farmers+Dog", desc: "Vet-formulated. Real ingredients. Health visible in weeks.", orig: 70, curr: 55, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 20, name: "Veken Water Fountain", category: "pet", image: "https://via.placeholder.com/300x240?text=Veken", desc: "Filtered flowing water keeps pets engaged.", orig: 48, curr: 36, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 21, name: "Full Moon Chicken Jerky", category: "pet", image: "https://via.placeholder.com/300x240?text=Full+Moon", desc: "Human-grade, single ingredient, USA-made.", orig: 24, curr: 18, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" },
+    { id: 22, name: "Greenies Dental Treats", category: "pet", image: "https://via.placeholder.com/300x240?text=Greenies", desc: "Vet-recommended. Cleans teeth while they enjoy.", orig: 35, curr: 28, link: "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE" }
+  ];
+  nextId = 23;
+  saveProducts();
+}
+
+function saveProducts() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+}
+
+function addProduct(e) {
+  e.preventDefault();
+  const product = {
+    id: nextId++,
+    name: document.getElementById('name').value,
+    category: document.getElementById('category').value,
+    image: document.getElementById('image').value || 'https://via.placeholder.com/300x240?text=' + document.getElementById('name').value.replace(/ /g, '+'),
+    desc: document.getElementById('desc').value,
+    orig: parseFloat(document.getElementById('orig').value),
+    curr: parseFloat(document.getElementById('curr').value),
+    link: document.getElementById('link').value || 'https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE'
+  };
+
+  products.push(product);
+  saveProducts();
+  document.getElementById('productForm').reset();
+  showMessage('Product added!', 'success');
+  renderProducts();
+}
+
+function deleteProduct(id) {
+  products = products.filter(p => p.id !== id);
+  saveProducts();
+  showMessage('Product deleted', 'success');
+  renderProducts();
+}
+
+function renderProducts() {
+  const list = document.getElementById('productsList');
+  document.getElementById('count').textContent = products.length;
+
+  if (products.length === 0) {
+    list.innerHTML = '<div class="no-products">No products yet. Add your first one above!</div>';
+    return;
+  }
+
+  list.innerHTML = products.map(p => {
+    const savings = Math.round(((p.orig - p.curr) / p.orig) * 100);
+    return `
+      <div class="product-item">
+        <div class="product-info">
+          <h3>${p.name}</h3>
+          <p>Category: <strong>${p.category}</strong></p>
+          <p>Price: $${p.orig} → $${p.curr} (Save ${savings}%)</p>
+          <p>${p.desc.substring(0, 60)}...</p>
+        </div>
+        <div class="product-actions">
+          <button class="btn-danger" onclick="deleteProduct(${p.id})">Delete</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function copyJsonToClipboard() {
+  const json = JSON.stringify({ products }, null, 2);
+  navigator.clipboard.writeText(json).then(() => {
+    showMessage('JSON copied to clipboard! Paste it into products.json on GitHub.', 'success');
+  });
+}
+
+function downloadJson() {
+  const json = JSON.stringify({ products }, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'products.json';
+  a.click();
+  showMessage('products.json downloaded!', 'success');
+}
+
+function showMessage(text, type) {
+  const msg = document.getElementById('message');
+  msg.innerHTML = `<div class="message ${type}">${text}</div>`;
+  setTimeout(() => msg.innerHTML = '', 3000);
+}
+
+document.getElementById('productForm').addEventListener('submit', addProduct);
+loadProducts();
+</script>
+
+</body>
+</html>

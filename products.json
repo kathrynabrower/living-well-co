@@ -1,0 +1,224 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "NordicTrack iFIT Treadmill",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=NordicTrack",
+      "desc": "Interactive training that adapts to your goals.",
+      "orig": 1499,
+      "curr": 999,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 2,
+      "name": "Resistance Bands Set",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=Resistance+Bands",
+      "desc": "Five levels with carry bag. Best home upgrade.",
+      "orig": 29,
+      "curr": 19,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 3,
+      "name": "Owala Water Bottle",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=Owala",
+      "desc": "Keeps drinks cold 24 hours. Dual-function lid.",
+      "orig": 36,
+      "curr": 26,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 4,
+      "name": "Liquid I.V. Variety Pack",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=Liquid+IV",
+      "desc": "Cellular hydration without sugar. 30K monthly.",
+      "orig": 45,
+      "curr": 35,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 5,
+      "name": "Yoga Mat Premium",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=Yoga+Mat",
+      "desc": "Natural rubber, alignment guides, 5mm cushioning.",
+      "orig": 120,
+      "curr": 90,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 6,
+      "name": "Massage Gun Pro",
+      "category": "fitness",
+      "image": "https://via.placeholder.com/300x240?text=Massage+Gun",
+      "desc": "Deep muscle relief, 3 speeds, app-guided routines.",
+      "orig": 299,
+      "curr": 209,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 7,
+      "name": "Vitamin C Serum",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Vitamin+C",
+      "desc": "Visible results in 30 days. Stable formula.",
+      "orig": 58,
+      "curr": 42,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 8,
+      "name": "Mighty Patch Acne Patches",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Mighty+Patch",
+      "desc": "#1 seller. Flattens blemishes overnight.",
+      "orig": 16,
+      "curr": 11,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 9,
+      "name": "Magnesium Glycinate",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Magnesium",
+      "desc": "Better sleep within a week. No jitters.",
+      "orig": 25,
+      "curr": 18,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 10,
+      "name": "Athletic Greens AG1",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Athletic+Greens",
+      "desc": "75+ micronutrients. Energy, recovery, immunity.",
+      "orig": 99,
+      "curr": 79,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 11,
+      "name": "Sleep Support Stack",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Sleep+Support",
+      "desc": "Magnesium + Melatonin. Night time formula.",
+      "orig": 32,
+      "curr": 24,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 12,
+      "name": "Face Moisturizer Premium",
+      "category": "health",
+      "image": "https://via.placeholder.com/300x240?text=Moisturizer",
+      "desc": "Lightweight, fast absorb. Glowing skin in 5 days.",
+      "orig": 68,
+      "curr": 53,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 13,
+      "name": "TERRO Ant Bait",
+      "category": "home",
+      "image": "https://via.placeholder.com/300x240?text=TERRO",
+      "desc": "Eliminates entire colony. Household staple.",
+      "orig": 12,
+      "curr": 8,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 14,
+      "name": "Mosquito Dunks",
+      "category": "home",
+      "image": "https://via.placeholder.com/300x240?text=Mosquito+Dunks",
+      "desc": "Safe for pets & wildlife. Seasonal essential.",
+      "orig": 20,
+      "curr": 14,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 15,
+      "name": "Zevo Insect Trap",
+      "category": "home",
+      "image": "https://via.placeholder.com/300x240?text=Zevo",
+      "desc": "No sprays, smell, or mess. Set and forget.",
+      "orig": 35,
+      "curr": 26,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 16,
+      "name": "Air Purifier Pro",
+      "category": "home",
+      "image": "https://via.placeholder.com/300x240?text=Air+Purifier",
+      "desc": "True HEPA. Covers 400 sq ft. Ultra-quiet.",
+      "orig": 549,
+      "curr": 449,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 17,
+      "name": "Litter-Robot 4",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Litter-Robot",
+      "desc": "Self-cleans. Gold standard for multi-cat homes.",
+      "orig": 499,
+      "curr": 399,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 18,
+      "name": "Furbo Dog Camera",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Furbo",
+      "desc": "360° view, two-way audio, treat tossing.",
+      "orig": 199,
+      "curr": 149,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 19,
+      "name": "Farmer's Dog Meals",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Farmers+Dog",
+      "desc": "Vet-formulated. Real ingredients. Health visible in weeks.",
+      "orig": 70,
+      "curr": 55,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 20,
+      "name": "Veken Water Fountain",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Veken",
+      "desc": "Filtered flowing water keeps pets engaged.",
+      "orig": 48,
+      "curr": 36,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 21,
+      "name": "Full Moon Chicken Jerky",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Full+Moon",
+      "desc": "Human-grade, single ingredient, USA-made.",
+      "orig": 24,
+      "curr": 18,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 22,
+      "name": "Greenies Dental Treats",
+      "category": "pet",
+      "image": "https://via.placeholder.com/300x240?text=Greenies",
+      "desc": "Vet-recommended. Cleans teeth while they enjoy.",
+      "orig": 35,
+      "curr": 28,
+      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    }
+  ]
+}
