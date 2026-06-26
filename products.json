@@ -1,11 +1,21 @@
 {
   "products": [
     {
+      "id": 1,
+      "name": "NordicTrack T Series Treadmill",
+      "category": "fitness",
+      "image": "https://i.imgur.com/2iDlbVu.png",
+      "desc": "Foldable enough for a spare bedroom, powerful enough for serious training. 10 MPH, 0-10% incline, EasyLift folding. Amazon's Choice.",
+      "orig": 799,
+      "curr": 624,
+      "link": "https://amzn.to/4vsQAj2"
+    },
+    {
       "id": 7,
       "name": "Vitamin C Serum",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Vitamin+C",
-      "desc": "Visible results in 30 days. Stable formula.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Vitamin+C",
+      "desc": "Visible results in 30 days. Stable formula that actually delivers.",
       "orig": 58,
       "curr": 42,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -14,8 +24,8 @@
       "id": 8,
       "name": "Mighty Patch Acne Patches",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Mighty+Patch",
-      "desc": "#1 seller. Flattens blemishes overnight.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Mighty+Patch",
+      "desc": "#1 seller. Flattens blemishes overnight without touching them.",
       "orig": 16,
       "curr": 11,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -24,8 +34,8 @@
       "id": 9,
       "name": "Magnesium Glycinate",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Magnesium",
-      "desc": "Better sleep within a week. No jitters.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Magnesium",
+      "desc": "Better sleep within a week. No grogginess, no jitters.",
       "orig": 25,
       "curr": 18,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -34,8 +44,8 @@
       "id": 10,
       "name": "Athletic Greens AG1",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Athletic+Greens",
-      "desc": "75+ micronutrients. Energy, recovery, immunity.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=AG1",
+      "desc": "75+ micronutrients in one scoop. Energy, gut health, and immunity.",
       "orig": 99,
       "curr": 79,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -44,8 +54,8 @@
       "id": 11,
       "name": "Sleep Support Stack",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Sleep+Support",
-      "desc": "Magnesium + Melatonin. Night time formula.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Sleep+Support",
+      "desc": "Magnesium and melatonin in the right ratio. Fall asleep faster, wake up rested.",
       "orig": 32,
       "curr": 24,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -54,8 +64,8 @@
       "id": 12,
       "name": "Face Moisturizer Premium",
       "category": "health",
-      "image": "https://via.placeholder.com/300x240?text=Moisturizer",
-      "desc": "Lightweight, fast absorb. Glowing skin in 5 days.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Moisturizer",
+      "desc": "Lightweight, fast-absorbing, visibly different in 5 days.",
       "orig": 68,
       "curr": 53,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -64,8 +74,8 @@
       "id": 13,
       "name": "TERRO Ant Bait",
       "category": "home",
-      "image": "https://via.placeholder.com/300x240?text=TERRO",
-      "desc": "Eliminates entire colony. Household staple.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=TERRO+Ant+Bait",
+      "desc": "Eliminates the entire colony, not just the ants you see.",
       "orig": 12,
       "curr": 8,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -74,8 +84,8 @@
       "id": 14,
       "name": "Mosquito Dunks",
       "category": "home",
-      "image": "https://via.placeholder.com/300x240?text=Mosquito+Dunks",
-      "desc": "Safe for pets & wildlife. Seasonal essential.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Mosquito+Dunks",
+      "desc": "Safe for pets and wildlife. Kills larvae before they hatch.",
       "orig": 20,
       "curr": 14,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -84,8 +94,8 @@
       "id": 15,
       "name": "Zevo Insect Trap",
       "category": "home",
-      "image": "https://via.placeholder.com/300x240?text=Zevo",
-      "desc": "No sprays, smell, or mess. Set and forget.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Zevo+Trap",
+      "desc": "No sprays, no smell, no mess. Plug in and walk away.",
       "orig": 35,
       "curr": 26,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -94,8 +104,8 @@
       "id": 16,
       "name": "Air Purifier Pro",
       "category": "home",
-      "image": "https://via.placeholder.com/300x240?text=Air+Purifier",
-      "desc": "True HEPA. Covers 400 sq ft. Ultra-quiet.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Air+Purifier",
+      "desc": "True HEPA, covers 400 sq ft, whisper-quiet. You will notice the difference.",
       "orig": 549,
       "curr": 449,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -104,8 +114,8 @@
       "id": 17,
       "name": "Litter-Robot 4",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Litter-Robot",
-      "desc": "Self-cleans. Gold standard for multi-cat homes.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Litter-Robot+4",
+      "desc": "Self-cleaning, app-connected, odor-free. Gold standard for multi-cat homes.",
       "orig": 499,
       "curr": 399,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -114,28 +124,28 @@
       "id": 18,
       "name": "Furbo Dog Camera",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Furbo",
-      "desc": "360° view, two-way audio, treat tossing.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Furbo",
+      "desc": "360 degree view, two-way audio, and treat tossing from your phone.",
       "orig": 199,
       "curr": 149,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
     },
     {
       "id": 19,
-      "name": "Farmer's Dog Meals",
+      "name": "The Farmer's Dog",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Farmers+Dog",
-      "desc": "Vet-formulated. Real ingredients. Health visible in weeks.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Farmers+Dog",
+      "desc": "Vet-formulated, real ingredients. See the difference in coat and energy within weeks.",
       "orig": 70,
       "curr": 55,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
     },
     {
       "id": 20,
-      "name": "Veken Water Fountain",
+      "name": "Veken Pet Water Fountain",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Veken",
-      "desc": "Filtered flowing water keeps pets engaged.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Veken+Fountain",
+      "desc": "Filtered flowing water that keeps cats and dogs actually drinking.",
       "orig": 48,
       "curr": 36,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -144,8 +154,8 @@
       "id": 21,
       "name": "Full Moon Chicken Jerky",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Full+Moon",
-      "desc": "Human-grade, single ingredient, USA-made.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Full+Moon",
+      "desc": "Human-grade, single ingredient, USA-made. One look at the label says it all.",
       "orig": 24,
       "curr": 18,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
@@ -154,31 +164,11 @@
       "id": 22,
       "name": "Greenies Dental Treats",
       "category": "pet",
-      "image": "https://via.placeholder.com/300x240?text=Greenies",
-      "desc": "Vet-recommended. Cleans teeth while they enjoy.",
+      "image": "https://placehold.co/300x240/e8e3d3/888780?text=Greenies",
+      "desc": "Vet-recommended. Cleans teeth and freshens breath while they enjoy.",
       "orig": 35,
       "curr": 28,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 23,
-      "name": "Nortic Track L series",
-      "category": "fitness",
-      "image": "https://imgur.com/a/0kdVdEK",
-      "desc": "NordicTrack T Series 6.5S Folding Treadmill — Get Fit Without Leaving Home\n\nThis is the treadmill that actually gets used. Foldable enough for a spare bedroom, powerful enough for serious training — the NordicTrack T Series 6.5S hits the sweet spot between performance and practicality.\n\nWhat you get:\n\n• Speeds up to 10 MPH — walk, jog, or run\n\n• 0–10% OneTouch incline for serious calorie burn\n\n• FlexSelect cushioning to protect your joints\n\n• 300 lb weight capacity\n\n• 5” LCD display + device shelf\n\n• Bluetooth heart-rate compatible\n\n• EasyLift folding design for compact storage\n\nAmazon’s Choice | 4.5 Stars | Best Seller in Home Treadmills\n\n🔥 Limited Time: $624 — 22% off the regular $799 price\n\n\n\n",
-      "orig": 799,
-      "curr": 624,
-      "link": "https://amzn.to/4vsQAj2"
-    },
-    {
-      "id": 24,
-      "name": "NordicTrack T Series",
-      "category": "fitness",
-      "image": "https://imgur.com/a/0kdVdEK",
-      "desc": "This is the treadmill that actually gets used. Foldable enough for a spare bedroom, powerful enough for serious training — the NordicTrack T Series 6.5S hits the sweet spot between performance and practicality.\n\n\n\nWhat you get:\n\n\n\n• Speeds up to 10 MPH — walk, jog, or run\n\n• 0–10% OneTouch incline for serious calorie burn\n\n• FlexSelect cushioning to protect your joints\n\n• 300 lb weight capacity\n\n• 5” LCD display + device shelf\n\n• Bluetooth heart-rate compatible\n\n• EasyLift folding design for compact storage\n\nAmazon’s Choice | 4.5 Stars | Best Seller in Home Treadmills",
-      "orig": 799,
-      "curr": 624,
-      "link": "https://amzn.to/4vsQAj2"
     }
   ]
 }
