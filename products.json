@@ -1,66 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "NordicTrack iFIT Treadmill",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=NordicTrack",
-      "desc": "Interactive training that adapts to your goals.",
-      "orig": 1499,
-      "curr": 999,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 2,
-      "name": "Resistance Bands Set",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=Resistance+Bands",
-      "desc": "Five levels with carry bag. Best home upgrade.",
-      "orig": 29,
-      "curr": 19,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 3,
-      "name": "Owala Water Bottle",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=Owala",
-      "desc": "Keeps drinks cold 24 hours. Dual-function lid.",
-      "orig": 36,
-      "curr": 26,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 4,
-      "name": "Liquid I.V. Variety Pack",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=Liquid+IV",
-      "desc": "Cellular hydration without sugar. 30K monthly.",
-      "orig": 45,
-      "curr": 35,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 5,
-      "name": "Yoga Mat Premium",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=Yoga+Mat",
-      "desc": "Natural rubber, alignment guides, 5mm cushioning.",
-      "orig": 120,
-      "curr": 90,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
-      "id": 6,
-      "name": "Massage Gun Pro",
-      "category": "fitness",
-      "image": "https://via.placeholder.com/300x240?text=Massage+Gun",
-      "desc": "Deep muscle relief, 3 speeds, app-guided routines.",
-      "orig": 299,
-      "curr": 209,
-      "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
-    },
-    {
       "id": 7,
       "name": "Vitamin C Serum",
       "category": "health",
@@ -219,6 +159,26 @@
       "orig": 35,
       "curr": 28,
       "link": "https://amazon.com/dp/ASIN?tag=YOUR-TAG-HERE"
+    },
+    {
+      "id": 23,
+      "name": "Nortic Track L series",
+      "category": "fitness",
+      "image": "https://imgur.com/a/0kdVdEK",
+      "desc": "NordicTrack T Series 6.5S Folding Treadmill — Get Fit Without Leaving Home\n\nThis is the treadmill that actually gets used. Foldable enough for a spare bedroom, powerful enough for serious training — the NordicTrack T Series 6.5S hits the sweet spot between performance and practicality.\n\nWhat you get:\n\n• Speeds up to 10 MPH — walk, jog, or run\n\n• 0–10% OneTouch incline for serious calorie burn\n\n• FlexSelect cushioning to protect your joints\n\n• 300 lb weight capacity\n\n• 5” LCD display + device shelf\n\n• Bluetooth heart-rate compatible\n\n• EasyLift folding design for compact storage\n\nAmazon’s Choice | 4.5 Stars | Best Seller in Home Treadmills\n\n🔥 Limited Time: $624 — 22% off the regular $799 price\n\n\n\n",
+      "orig": 799,
+      "curr": 624,
+      "link": "https://amzn.to/4vsQAj2"
+    },
+    {
+      "id": 24,
+      "name": "NordicTrack T Series",
+      "category": "fitness",
+      "image": "https://imgur.com/a/0kdVdEK",
+      "desc": "This is the treadmill that actually gets used. Foldable enough for a spare bedroom, powerful enough for serious training — the NordicTrack T Series 6.5S hits the sweet spot between performance and practicality.\n\n\n\nWhat you get:\n\n\n\n• Speeds up to 10 MPH — walk, jog, or run\n\n• 0–10% OneTouch incline for serious calorie burn\n\n• FlexSelect cushioning to protect your joints\n\n• 300 lb weight capacity\n\n• 5” LCD display + device shelf\n\n• Bluetooth heart-rate compatible\n\n• EasyLift folding design for compact storage\n\nAmazon’s Choice | 4.5 Stars | Best Seller in Home Treadmills",
+      "orig": 799,
+      "curr": 624,
+      "link": "https://amzn.to/4vsQAj2"
     }
   ]
 }
